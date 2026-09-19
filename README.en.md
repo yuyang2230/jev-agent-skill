@@ -18,6 +18,7 @@ Works with Claude Code, ZCode, or any agent with a skills directory.
 
 Verified 2026-09-20 over 10+ real calls: 283–694 input tokens each, `cost: 0`,
 ~2s end-to-end, 4 parallel questions per request, Chinese state/criteria OK.
+**Full benchmark (token consumption & quality vs main-model judging, incl. 3×-repeat consistency) in [references/benchmark-jev-vs-mainmodel.md](references/benchmark-jev-vs-mainmodel.md).**
 
 ## Why it saves tokens
 

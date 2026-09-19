@@ -1,5 +1,9 @@
 # jev-agent-skill — free typed judgments for AI coding agents
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20ZCode-8A2BE2)
+![cost](https://img.shields.io/badge/judgment%20cost-%240-brightgreen)
+
 Offload **high-frequency small judgments** (classify / batch-screen / score /
 verify) from your main model to [Jev](https://docs.typesafe.ai/concepts/system-one)
 (TypeSafe System One decision model, free tier via OpenCode Zen). The main
@@ -64,6 +68,13 @@ Extracted from the author's production pipeline: a Taobao shop selling lab
 glassware (glass reactors, rotary evaporators, PT100 probes & fittings) uses
 it for comment triage, pre-send compliance checks, and A/B copy review.
 See [references/showcase-taobao-comments.md](references/showcase-taobao-comments.md).
+
+## Ecosystem
+
+- [typesafe-ai/skills](https://github.com/typesafe-ai/skills) — official skills pack; the source of this repo's SKILL.md (MIT)
+- **Curated lists** (browse for more Jev integrations/patterns): [awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) · [yibie/awesome-jev](https://github.com/yibie/awesome-jev) · [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) · [AbdelStark/awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe)
+- [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) — same "judgments-down" idea, one level up: replace compaction summaries with Jev decisions (Claude Code plugin, 4k★)
+- [building-with-jev-skill](https://github.com/dbreunig/building-with-jev-skill) — companion skill: teaching agents to write programs that call Jev well
 
 ## Author
 

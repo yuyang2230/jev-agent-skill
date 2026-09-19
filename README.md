@@ -1,5 +1,9 @@
 # jev-agent-skill — 给 AI 编码代理装上「免费决策前置反射弧」
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20ZCode-8A2BE2)
+![cost](https://img.shields.io/badge/judgment%20cost-%240-brightgreen)
+
 把**高频小判断**（分类 / 初筛 / 打分 / 核查）从主模型卸载给 [Jev](https://docs.typesafe.ai/concepts/system-one)（TypeSafe System One 决策模型，OpenCode Zen 免费档），主模型专心生成，判断走免费通道。适配 Claude Code / ZCode 及任何带 skills 目录的 agent。
 
 | | 主模型做判断 | Jev 做判断 |
@@ -58,6 +62,13 @@ echo '{"state":"Payment system down 3h, users complaining","questions":{"is_urge
 - **文案评审**：3 版标题 3 版点评，一次调用（1334 输入 token，$0）由 Jev 选优
 
 完整过程：[references/showcase-taobao-comments.md](references/showcase-taobao-comments.md)
+
+## 生态 / Ecosystem
+
+- [typesafe-ai/skills](https://github.com/typesafe-ai/skills) — 官方技能包，本仓库 SKILL.md 的底稿（MIT）
+- **收录列表**（找更多 Jev 集成/模式从这里逛起）：[awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) · [yibie/awesome-jev](https://github.com/yibie/awesome-jev) · [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) · [AbdelStark/awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe)
+- [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) — 同一「判断下沉」思路的进阶玩法：用 Jev 决策替代上下文压缩摘要（Claude Code 插件，4k★）
+- [building-with-jev-skill](https://github.com/dbreunig/building-with-jev-skill) — 互补技能：教 agent 写好「调用 Jev 的程序」
 
 ## 作者
 

@@ -12,7 +12,7 @@
 | 输出 | 自由文本，需解析 | 类型化 schema（choice/noul/score），零格式错误 |
 | 并发 | 串行 | 一次请求多问并行 |
 
-实测（2026-09-20，10+ 次真实调用）：单次输入 283–694 token、`cost: 0`、端到端 ~2s；一次请求并行 4 问正常；中文 state/criteria 正常。
+实测（2026-09-20，10+ 次真实调用）：单次输入 283–694 token、`cost: 0`、端到端 ~2s；一次请求并行 4 问正常；中文 state/criteria 正常。**详细对比（tokens 消耗 & 内容质量，含 3 连发一致性实测）见 [benchmark 报告](references/benchmark-jev-vs-mainmodel.md)。**
 
 ## 为什么省 token
 
